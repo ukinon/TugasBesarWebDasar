@@ -47,7 +47,7 @@ button::before{
 }
 button:hover::before{
     background-color: #ffffff;
-    top: 120%
+    top: 100%
 }
 .selection{
     background-color: white;
@@ -57,7 +57,7 @@ button:hover::before{
     float: left;
     width: 10%;
     height: 50%;
-    padding: 0 10px;
+    padding: 0 40px;
   }
   
 
@@ -75,7 +75,7 @@ button:hover::before{
   
 
   .card{
-    width: 100px;
+    width: 130px;
     height: 200px;
     position:relative;
     color: rgb(0, 0, 0);
