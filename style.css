@@ -7,7 +7,9 @@ body{
     margin: auto;
     overflow: hidden;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('img.index/background.jpg');
 }
+
 .start{
     background-color: black;
     text-align: center;
@@ -16,7 +18,7 @@ body{
     display:block;
 }
 
-button{
+.start_btn{
 width: 200px;
 height: 100px;
 position:relative;
@@ -27,37 +29,53 @@ border: 1px solid rgb(100, 100, 100);
 border-radius: 20%;
 transition: all 1s;
 }
-button:hover{
+.start_btn:hover{
 color: black;
 border-color: black;
 background-color: rgb(255, 255, 255);
 font-weight: bolder;
 }
-button::before{
+.start_btn::before{
     content: "";
     position: absolute;
     background-color: transparent;
     top: 80%;
     left: 0;
-    width: 200px;
+    width: 189px;
     height: 100px;
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(1em);
     transition: all 1s;
 }
-button:hover::before{
+.start_btn:hover::before{
     background-color: #ffffff;
     top: 100%
 }
 .selection{
-    background-color: white;
+    background:transparent;
     color: black;
+}
+.selection h1{
+    background-color: white;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left:  1%;
+    padding-right: 1%;
+    margin-top: 1px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 25px;
+    outline-style: dashed;
+    outline-width: 5px;
+    outline-color: rgb(0, 0, 0);
 }
 .column {
     float: left;
     width: 10%;
     height: 50%;
     padding: 0 40px;
+    margin-bottom: 40px
   }
   
 
@@ -79,7 +97,7 @@ button:hover::before{
     height: 200px;
     position:relative;
     color: rgb(0, 0, 0);
-    background-color: transparent;
+    background-color: white;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 20%;
     transition: all 1s;
