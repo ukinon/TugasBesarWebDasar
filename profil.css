@@ -77,6 +77,10 @@ body{
   font-size: 44px;
   animation: float 5s ease-in-out infinite;
 }
+.icon:hover{
+  color: white;
+  transition: all 1s;
+}
 .ri-facebook-circle-line{
   animation-delay: 1s;
 }
