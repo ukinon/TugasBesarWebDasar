@@ -10,6 +10,43 @@ body{
     background-image: url('img.index/background.jpg');
 }
 
+/* TITLE */
+.button{
+    display:block;
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg, rgb(255, 255, 255), rgb(180, 180, 180),rgb(138, 138, 138),rgb(94, 94, 94),rgb(67, 67, 67), rgb(0, 0, 0));
+    background-size: 50% 100%;
+    border-radius: inherit;
+    animation: animate-border 3s linear infinite;
+}
+
+.button span{
+    display: block;
+    background-color: black;
+    padding: 30px 0;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+/* TAP TO START */
 .start{
     background-color: black;
     text-align: center;
@@ -41,7 +78,7 @@ font-weight: bolder;
     background-color: transparent;
     top: 80%;
     left: 0;
-    width: 189px;
+    width: 189.4px;
     height: 100px;
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(1em);
@@ -51,6 +88,8 @@ font-weight: bolder;
     background-color: #ffffff;
     top: 100%
 }
+
+/* CHOOSE YOUR FIGHTER */
 .selection{
     background:transparent;
     color: black;
@@ -80,7 +119,7 @@ font-weight: bolder;
   
 
   .row {
-      margin: 50px;
+    margin: 50px;
      align-content: center;
 
     }  
@@ -101,7 +140,7 @@ font-weight: bolder;
     border: 5px solid rgb(0, 0, 0);
     border-radius: 20%;
     transition: all 1s;
-    margin-left: auto;
+    margin-left: 40px;
     margin-right: auto;
     padding: 10px;
     display: block;
@@ -114,41 +153,7 @@ font-weight: bolder;
     transform: scale(1.5);
     }
     
-   .button{
-       display:block;
-       text-decoration: none;
-       color: white;
-       padding: 3px;
-       position: relative;
-       overflow: hidden;
-       border-radius: 20px;
-   }
-
-   .button::before{
-       content: "";
-       position: absolute;
-       border-radius: 20px;
-       top: 0;
-       left: 0;
-       width: 200%;
-       height: 100%;
-       background: linear-gradient(115deg, rgb(0, 170, 255), rgb(10, 162, 227),rgb(27, 136, 183),rgb(1, 91, 181),rgb(2, 6, 248), rgb(0, 162, 255));
-       background-size: 50% 100%;
-       border-radius: inherit;
-       animation: animate-border 3s linear infinite;
-   }
-
-   .button span{
-       display: block;
-       background-color: black;
-       padding: 30px 0;
-       border-radius: 3px;
-       position: relative;
-       z-index: 2;
-       font-size: 30px;
-       border-radius: 20px;
-   }
-
+/* KEYFRAMES */
    @keyframes animate-border{
        to{
            transform: translateX(-50%);
