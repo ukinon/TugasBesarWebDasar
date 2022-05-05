@@ -23,7 +23,6 @@ z-index: 950;
   text-decoration: none;
   font-size: 17px;
   transition: all 0.5s;
- ;
 }
 
 .navbar a:hover {
@@ -107,7 +106,7 @@ main
 {
     background-color: rgb(0, 0, 0);
     padding-top: 5%;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     padding-left:  10%;
     padding-right: 10%;
     box-shadow: 10px 5px 10px 10px #3a3a3a;

@@ -29,7 +29,7 @@ body{
     left: 0;
     width: 200%;
     height: 100%;
-    background: linear-gradient(115deg, rgb(255, 255, 255), rgb(180, 180, 180),rgb(138, 138, 138),rgb(94, 94, 94),rgb(67, 67, 67), rgb(0, 0, 0));
+    background: linear-gradient(115deg, rgb(58, 57, 57), rgb(180, 180, 180),rgb(138, 138, 138),rgb(180, 180, 180), rgb(58, 57, 57));
     background-size: 50% 100%;
     border-radius: inherit;
     animation: animate-border 3s linear infinite;
@@ -78,7 +78,7 @@ font-weight: bolder;
     background-color: transparent;
     top: 80%;
     left: 0;
-    width: 189.4px;
+    width: 190px;
     height: 100px;
     transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
     filter: blur(1em);
@@ -93,6 +93,7 @@ font-weight: bolder;
 .selection{
     background:transparent;
     color: black;
+    margin-top: -1px;
 }
 .selection h1{
     background-color: white;
@@ -146,11 +147,17 @@ font-weight: bolder;
     display: block;
     }
     .card:hover{
-    color: rgb(255, 255, 255);
-    border-color: black;
-    background-color: rgb(100, 100, 100);
     font-weight: bolder;
     transform: scale(1.5);
+    filter: brightness(40%);
+    }
+
+    #top{
+        background-color: black;
+    }
+    #top:hover{
+        background-color: gray;
+        border-color: white;
     }
     
 /* KEYFRAMES */
