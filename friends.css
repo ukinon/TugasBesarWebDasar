@@ -123,6 +123,8 @@ main
     outline-color: rgb(101, 93, 93);
     color: white;
     margin: 5%;
+    margin-top: 1px;
+    margin-bottom: 1px;
     overflow: hidden;
 }
 
